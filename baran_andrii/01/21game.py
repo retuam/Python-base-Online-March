@@ -10,9 +10,9 @@ while game == 1:
     mode = input('MODE: ')
     if mode != '1' and mode != '2' and mode != '3':
         mode = input('PLEASE TYPE VALID MODE TYPE: 1, 2 or 3. MODE: ')
-    print('\n\n\t\tMODE "1" SELECTED \n\n')
-    if mode == '1':
 
+    if mode == '1':
+        print('\n\n\t\tMODE "1" SELECTED \n\n')
         move = 1
         while move:
             print('Player move ....\n')
@@ -82,6 +82,8 @@ while game == 1:
             break
         game = 0
     if mode == '2':
+        print('\n\n\t\tMODE "2" SELECTED \n\n')
+        
         user_move = 1
         user_points = 0
 
@@ -221,6 +223,8 @@ while game == 1:
         game = 0
 
     if mode == '3':
+        print('\n\n\t\tMODE "3" SELECTED \n\n')
+        
         user_move = 1
         user_points = 0
 
