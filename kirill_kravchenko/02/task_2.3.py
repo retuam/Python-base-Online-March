@@ -11,9 +11,9 @@ str = [1, 2, 3, 1, 3, 2, 1]
 # 1 variant
 # ======
 
-for i in str:
+equiv = 0
 
-    equiv = 0
+for i in str:
 
     for j in str:
 
@@ -23,6 +23,8 @@ for i in str:
     if equiv > 0 and equiv % 2:
         print(f'This is number "{i}" occurs "{equiv}" times in array')
         break
+
+    equiv = 0
     
 if equiv % 2 == 0:
     print(f'There is no number that occurs odd times in array')
@@ -32,6 +34,7 @@ if equiv % 2 == 0:
 # ======
 
 str_odd = []
+length = 0
 
 for i in str:
 
