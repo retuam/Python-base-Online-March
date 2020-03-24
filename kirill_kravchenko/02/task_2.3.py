@@ -20,11 +20,11 @@ for i in str:
         if i == j:
             equiv += 1
 
-    if equiv > 1 and equiv % 2:
+    if equiv > 0 and equiv % 2:
         print(f'This is number "{i}" occurs "{equiv}" times in array')
         break
-
-if equiv == 0:
+    
+if equiv % 2 == 0:
     print(f'There is no number that occurs odd times in array')
 
 # ======
@@ -40,9 +40,12 @@ for i in str:
 for j in str_odd:
 
     length = len(j)
-    if length > 1 and length % 2:
+    if length > 0 and length % 2:
         print(f'This is number "{j[0]}" occurs "{length}" times in array')
         break
+
+if length % 2 == 0:
+    print(f'There is no number that occurs odd times in array')
 
 # ======
 # 3 variant
@@ -50,6 +53,7 @@ for j in str_odd:
 
 new_array = []
 new_index_array = []
+if_print = True
 
 for i in str:
 
@@ -65,5 +69,9 @@ for i in str:
 
 for j in range(len(new_index_array)):
     if new_index_array[j] % 2:
+        if_print = False
         print(f'This is number "{new_array[j]}" occurs "{new_index_array[j]}" times in array')
         break
+
+if if_print:
+    print(f'There is no number that occurs odd times in array')
