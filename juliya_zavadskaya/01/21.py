@@ -19,6 +19,8 @@ print('Please, choose level of the Game! 1/2/3')
 
 level_choice = int(input())
 '''
+не получаеться написать эту проверку :(
+
     if level_choice != '1' and level_choice != '2' and level_choice != '3':
         print('You have make a typo! Please, choose level of the Game! 1/2/3')
 '''
