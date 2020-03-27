@@ -26,10 +26,15 @@ def power_two(number):
 
     return result
 
+print('Map function')
+
 x = map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))
 print(list(x))
 
-x = map(power_two, [1, 2, 3])
+x = map(power_two, [1.1, 2, 3])
+print(list(x))
+
+x = map(power_two, [7])
 print(list(x))
 
 def my_map(func, *args):
@@ -37,8 +42,8 @@ def my_map(func, *args):
     This is custom map-function
     :param func: user function
     :type func: function
-    :param *args: list of arguments
-    :type *args: tuple
+    :param `*args`: the variable arguments are used for function
+    :type `*args`: variable-length argument list
     :return: array of function result values
     :rtype: list
     """
@@ -57,8 +62,13 @@ def my_map(func, *args):
 
     return output
 
+print('Custom map function')
+
 x = my_map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))
 print(list(x))
 
-x = my_map(power_two, [1, 2, 3])
+x = my_map(power_two, [7])
+print(list(x))
+
+x = my_map(power_two, [1.1, 2, 3])
 print(list(x))
