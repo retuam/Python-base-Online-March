@@ -27,9 +27,9 @@ def array_diff(seq1, seq2):
     return res
 
 
-print(array_diff([1, 2], [1]))
-print(array_diff([1, 2, 2, 2, 3], [2]))
-print(help(array_diff))
+print(array_diff([1, 2, 3, 4, 5], [4, 5, 6]))
+# print(array_diff([1, 2, 2, 2, 3], [2]))
+# print(help(array_diff))
 
 
 # Method 2
@@ -50,7 +50,7 @@ def array_diff1(seq1, seq2):
     return res_ls
 
 
-print(array_diff1([1, 2], [1]))
-print(array_diff1([1, 2, 2, 2, 3], [2]))
-print(help(array_diff1))
+# print(array_diff1([1, 2], [1]))
+# print(array_diff1([1, 2, 2, 2, 3], [2]))
+# print(help(array_diff1))
 
