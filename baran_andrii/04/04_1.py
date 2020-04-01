@@ -88,21 +88,8 @@ def get_unique_words(ls):
     :param ls: processed list
     :return: list
     """
-    counter = []
-    for item in ls:
-        if is_service_word(item):
-            continue
 
-        elif ls.count(item) == 1:
-            counter.append(item)
-
-        else:
-            continue
-    if not len(counter):
-        return 'No Unique Words'
-
-    else:
-        return counter
+    return list(set(ls))
 
 
 def find_keywords(ls):
