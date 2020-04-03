@@ -108,7 +108,7 @@ if __name__ == '__main__':
     # save_result(text_analizer(extract_function()))
 
     # variant 2 for string extraction
-    mstring = my_module.extract_file('text3.txt')
+    mstring = my_module.extract_file('text.txt')
 
     try:
 
