@@ -1,0 +1,7 @@
+input: 111 222 333 -111asd
+    output:
+    - words quantity: 4
+    - text dictionary: 111, 222, 333, -111asd
+    - keywords: 111 - 1, 222 - 1, 333 - 1
+    - frequency: 111 - 25%, 222 - 25%, 333 - 25%, -111asd - 25%
+    
